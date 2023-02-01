@@ -2,10 +2,12 @@ import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import logo1 from '../image-source/IconLogo/logo.png'
 import avatar from '../image-source/IconLogo/avatar.png'
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 const Navbar = () => {
   const [bg, setBg] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   useEffect (() => {
     window.addEventListener('scroll', () => {
@@ -14,11 +16,17 @@ const Navbar = () => {
   })
   return (
     <>
-    <div className={`${bg ? 'bg-white h-20 shadow-md' :'bg-none text-white shadow-none h-24 '} flex items-center fixed top-0 w-full  transision-all duration-500 px-10 navbar z-50`}>
-  <div className="flex-1 ">
+    <div className={`${bg ? 'bg-white h-20 shadow-md' :'bg-none text-white shadow-none h-24 '} flex items-center fixed top-0 w-full transision-all duration-500 px-10 navbar z-50`}>
+  <div className="md:flex-1 flex-1 ">
     <img src={logo1} className="w-40" alt="" />
   </div>
-  <div className="menulist text-[14px]">
+  <div onClick={() => {
+  setMenu(!menu)}} className={`md:hidden cursor-pointer px-2 text-2xl`} >
+    {menu ?
+    <FaTimes/> :
+    <FaBars/>}
+  </div>
+  <div className={`menulist text-[14px] flex flex-col items-end  md:flex-row md:pb-0 pb-0 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pr-9  ${menu ? 'top-20 bg-white text-black' : 'top-[-400px]'} ${bg ? 'bg-white' :'bg-none text-white'}`}>
      <a className="py-2 px-5 font-semibold text-xl  hover:underline" href="#menu">
         Our Menu
      </a>
@@ -29,6 +37,7 @@ const Navbar = () => {
       About
      </a>
   </div>
+
   <div className="flex-none">
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
