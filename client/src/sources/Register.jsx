@@ -33,7 +33,7 @@ const Register = () => {
         <div className="padding mx-auto px-5 md:max-w-screen-xl lg:max-w-screen-2xl ">
           <h1 className="text-center text-[30px]">WEBSITE LOGO</h1>
           <Link to="/">
-            <p className=""> kembali</p>
+            <p className=""> Kembali</p>
           </Link>
         </div>
       </header>
@@ -54,7 +54,7 @@ const Register = () => {
                   <div className="title text-center ">
                     <h2 className="font-bold ">DAFTAR SEKARANG</h2>
                     <div className="text-[14px]">
-                      Sudah punya akun FoodMe ?
+                      Sudah punya akun?
                       <Link to="/Login">
                         <a className="font-bold" href="#">
                           masuk
