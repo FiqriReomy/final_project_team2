@@ -5,7 +5,8 @@ import food6 from '../image-source/images/food6.png'
 import {AiOutlinePlus,AiOutlineMinus, AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
 import {BsCart3} from 'react-icons/bs'
 
-
+import {motion} from 'framer-motion'
+import {fadeIn} from '../../Efek'
 
 
 const Special = () => {
@@ -21,7 +22,11 @@ const Special = () => {
           </div>
           <div className="flex items-center gap-5 lg:gap-10 lg:px-20 px-10">
           <AiOutlineArrowLeft className='text-4xl bg-[#F2BD57] md:hidden rounded-full p-1 cursor-pointer'/>
-            <div className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 hidden md:flex flex-col">
+            <motion.div
+              variants={fadeIn('up',0.5)}
+              initial="hidden"
+              whileInView={'show'}
+            className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 hidden md:flex flex-col">
               <div className="flex justify-between px-4 py-4">
                   <div className="bg-red-500 font-bold rounded-lg
                    px-2">
@@ -58,8 +63,11 @@ const Special = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 flex flex-col">
+            </motion.div>
+            <motion.div
+              variants={fadeIn('up',0.5)}
+              initial="hidden"
+              whileInView={'show'} className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 flex flex-col">
               <div className="flex justify-between px-4 py-4">
                   <div className="bg-red-500 font-bold rounded-lg
                    px-2">
@@ -96,8 +104,11 @@ const Special = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 hidden md:flex flex-col">
+            </motion.div>
+            <motion.div
+              variants={fadeIn('up',0.5)}
+              initial="hidden"
+              whileInView={'show'} className="bg-bgprimary rounded-xl shadow-lg mx-auto w-[20rem] pb-4 hidden md:flex flex-col">
               <div className="flex justify-between px-4 py-4">
                   <div className="bg-red-500 font-bold rounded-lg
                    px-2">
@@ -134,7 +145,7 @@ const Special = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             <AiOutlineArrowRight className='text-4xl bg-[#F2BD57] md:hidden rounded-full p-1 cursor-pointer'/>
           
           </div>
