@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         bgprimary: '#F5EFE4',
-        secondary: '#79DFC0',
+        secondary: '#F2BD57',
       },
       backgroundImage: {
         hero: "url('../src/sources/image-source/background/bg2.jpg')",

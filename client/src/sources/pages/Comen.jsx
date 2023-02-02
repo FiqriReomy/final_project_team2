@@ -1,6 +1,8 @@
 import React from 'react'
 import {AiOutlineArrowLeft,AiOutlineArrowRight } from 'react-icons/ai'
 import avatar from '../image-source/IconLogo/avatar.png'
+import {motion} from 'framer-motion'
+import {fadeIn} from '../../Efek'
 
 function Comen() {
   return (
@@ -13,7 +15,10 @@ function Comen() {
             <AiOutlineArrowRight className='text-4xl bg-[#F2BD57] rounded-full p-1 cursor-pointer'/>
         </div>
       </div>
-      <div className='flex'>
+      <motion.div
+              variants={fadeIn('up',0.5)}
+              initial="hidden"
+              whileInView={'show'} className='flex'>
         <div className='bg-bgprimary md:flex flex-col p-3 rounded-md hidden  my-5 mx-5'>
             <p className='text-sm font-semibold'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, facilis aut! Aliquam, delectus voluptatem ratione ipsa nesciunt veritatis corrupti necessitatibus, illum repellat suscipit exercitationem aperiam amet libero nulla, explicabo maxime.</p>
             <div className='flex gap-2 pt-7 pb-4'>
@@ -23,7 +28,7 @@ function Comen() {
                     </div>
                 </div>
                 <div className='text-xl font-bold flex items-center text-[#553629]'>
-                    TOM Cruise
+                    Cruise
                 </div>
             </div>
         </div>
@@ -37,7 +42,7 @@ function Comen() {
                     </div>
                 </div>
                 <div className='text-xl font-bold flex items-center text-[#553629]'>
-                    TOM Cruise
+                    Ricard
                 </div>
             </div>
         </div>
@@ -50,11 +55,11 @@ function Comen() {
                     </div>
                 </div>
                 <div className='text-xl font-bold flex items-center text-[#553629]'>
-                    TOM Cruise
+                    Micky
                 </div>
             </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   </section>
   )
