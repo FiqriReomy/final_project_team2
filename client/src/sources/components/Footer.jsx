@@ -2,65 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <section class="sec3 mt-5 py-5">
-        <div class="spacing px-0 md:px-5 mx-auto w-[90%] sm:max-w-screen-md lg:max-w-screen-2xl">
-          <div class="top block md:flex mb-5 gap-10">
-            <div class="left w-full md:w-[40%] mb-5 md:text-left text-center">
-              <div class="logo md:block flex justify-center md:justify-start">
-                <img class="w-[180px]" src="./css/images/logoharisenin.png" alt="" />
-              </div>
-              <p class="mt-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ad illo aperiam nobis quos laudantium repellat maxime cupiditate nihil, praesentium, nemo commodi! Perspiciatis atque libero nemo animi officiis provident
-                qui doloribus, non nostrum eveniet cumque sed a dolorem porro reiciendis assumenda, possimus perferendis. Obcaecati, eligendi in quae nam nihil temporibus.
-              </p>
-            </div>
-            <div class="right flex w-full md:w-[40%] justify-between ml-0 md:ml-10">
-              <div class="program">
-                <button class="mb-2 font-bold">Our Menu</button>
-                <div class="content flex flex-col gap-2">
-                  <a href="#">Makanan</a>
-                  <a href="#">Minuman</a>
-                  <a href="#">Best Deal</a>
-                </div>
-              </div>
-              <div class="About">
-                <button class="mb-2 font-bold">About</button>
-                <div class="content flex flex-col gap-2">
-                  <a href="#">Tentang Kami</a>
-                  <a href="#">Food Blog</a>
-                </div>
-              </div>
-              <div class="Bantuan">
-                <button class="mb-2 font-bold">Bantuan</button>
-                <div class="content flex flex-col gap-2">
-                  <a href="#">FAQ</a>
-                  <a href="#">Syarat & Ketentuan</a>
-                  <a href="#">Kebijakan & Privasi</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bottom py-10 flex justify-between border-t-2">
-            <div class="text">© 2023 Team Project #2 Harisenin.com</div>
-            <div class="socialmedia flex gap-3 text-[20px]">
-              <div class="linkedin">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </div>
-              <div class="face">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </div>
-              <div class="insta">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </div>
-              <div class="twitter">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </footer>
+    <>
+<footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+  <div className="items-center grid-flow-col">
+    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+    <p>Harisenin.com <br/>Projex Kelompok 2</p>
+  </div> 
+</footer>
+    </>
   );
 };
 
