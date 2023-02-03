@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 // import Detailbox from "../../sources/components/Detailbox";
 import axios from "axios";
+import { fadeIn } from "../../controls/features/efect";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   const [DataResult, setData] = useState([]);
@@ -43,18 +45,25 @@ const Menu = () => {
           </div>
           <div className="content py-5 flex flex-wrap justify-between items-center">
             {DataResult.map((data) => (
-              <div className=" sm:w-full md:w-1/2 lg:w-1/4 p-2 " key={data.id}>
+              <motion.div variants={fadeIn("up", 0.5)} initial="hidden" whileInView={"show"} className=" sm:w-full md:w-1/2 lg:w-1/4 p-2  " key={data.id}>
                 <div className="display shadow-2xl relative cursor-pointer bg-white h-[300px] rounded-md">
                   <div className="image w-full h-[200px] overflow-hidden flex justify-center p-4">
-                    <img className="w-[80%] object-contain" src={data.url} alt="foodimage" />
+                    <img className="w-[80%] object-contain hover:scale-105" src={data.url} alt="foodimage" />
                   </div>
-                  <div className="flex py-2 px-5 font-bold text-[16px] p-2">{data.name}</div>
-                  <div className="py-2 px-5 text-[15px] text-left flex justify-between items-center">
-                    <div className="price">Rp. {data.price}</div>
-                    <button className="py-2 px-4 bg-green-500 rounded">ADD TO CART</button>
+                  <div className="flex  px-5 font-bold text-[16px] flex-col uppercase">{data.name}
+                  <div className="rating w-20">
+                      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                    </div></div>
+                  <div className=" px-5 text-[15px] text-left flex justify-between items-center">
+                    <div className="price text-md font-semibold">Rp. {data.price}</div>
+                    <button className="py-2 px-4 bg-green-500 rounded hover:bg-green-200">ADD TO CART</button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="content_area flex justify-between items-center ">
           <div className="logo">
             <div>
-              <img src={logo1} className="w-40" alt="" />
+              <img src={logo1} className="w-40 pr-10" alt="" />
             </div>
           </div>
 

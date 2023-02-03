@@ -2,6 +2,12 @@ import React from "react";
 import food20 from "../../image-source/images/food20.png";
 import food4 from "../../image-source/images/food4.png";
 import food6 from "../../image-source/images/food6.png";
+import food9 from "../../image-source/images/food9.png";
+import food16 from "../../image-source/images/food16.png";
+import food8 from "../../image-source/images/food8.png";
+import food7 from "../../image-source/images/food7.png";
+import food18 from "../../image-source/images/food18.png";
+import food19 from "../../image-source/images/food19.png";
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { BsCart3 } from "react-icons/bs";
 
@@ -33,13 +39,13 @@ const Special = () => {
               </div>
               <div className="flex flex-row justify-center -space-x-10 hover:scale-105">
                 <div className="w-24 z-20">
-                  <img src={food6} alt="" />
+                  <img src={food16} alt="" />
                 </div>
                 <div className="w-36 ">
-                  <img src={food4} alt="" />
+                  <img src={food9} alt="" />
                 </div>
                 <div className="w-20 -pl-6 z-20">
-                  <img src={food20} alt="" />
+                  <img src={food8} alt="" />
                 </div>
               </div>
               <div className="py-4 flex text-xl font-bold justify-center z-10">Advance Mode</div>
@@ -52,8 +58,7 @@ const Special = () => {
                   </div>
                   <div className="">
                     <dir className="flex gap-1">
-                      <BsCart3 className="bg-green-500 h-7 w-7 px-1 py-1 rounded-l-lg" />
-                      <p className="text-sm py-1 px-1 rounded-r-lg bg-green-500">Add to Cart</p>
+                      <p className="text-sm py-1 px-1 rounded-lg bg-green-500">Add to Cart</p>
                     </dir>
                   </div>
                 </div>
@@ -67,7 +72,7 @@ const Special = () => {
                 >
                   20% OFF
                 </div>
-                <div className="text-orange-500 font-bold">RP.75.000</div>
+                <div className="text-orange-500 font-bold">RP.60.000</div>
               </div>
               <div className="flex flex-row justify-center -space-x-10 hover:scale-105">
                 <div className="w-24 z-20">
@@ -80,7 +85,7 @@ const Special = () => {
                   <img src={food20} alt="" />
                 </div>
               </div>
-              <div className="py-4 flex text-xl font-bold justify-center z-10">Advance Mode</div>
+              <div className="py-4 flex text-xl font-bold justify-center z-10">Vegan Club</div>
               <div className="flex-1 justify-betweenn px-3">
                 <div className="flex flex-row items-center justify-between gap-2">
                   <div className="flex px-2 py-1 bg-white items-center gap-2 rounded-xl">
@@ -90,8 +95,7 @@ const Special = () => {
                   </div>
                   <div className="">
                     <dir className="flex gap-1">
-                      <BsCart3 className="bg-green-500 h-7 w-7 px-1 py-1 rounded-l-lg" />
-                      <p className="text-sm py-1 px-1 rounded-r-lg bg-green-500">Add to Cart</p>
+                      <p className="text-sm py-1 px-1 rounded-lg bg-green-500">Add to Cart</p>
                     </dir>
                   </div>
                 </div>
@@ -103,22 +107,22 @@ const Special = () => {
                   className="bg-red-500 font-bold rounded-lg
                    px-2"
                 >
-                  20% OFF
+                  30% OFF
                 </div>
-                <div className="text-orange-500 font-bold">RP.75.000</div>
+                <div className="text-orange-500 font-bold">RP.80.000</div>
               </div>
               <div className="flex flex-row justify-center -space-x-10 hover:scale-105">
                 <div className="w-24 z-20">
-                  <img src={food6} alt="" />
+                  <img src={food7} alt="" />
                 </div>
                 <div className="w-36 ">
-                  <img src={food4} alt="" />
+                  <img src={food18} alt="" />
                 </div>
                 <div className="w-20 -pl-6 z-20">
-                  <img src={food20} alt="" />
+                  <img src={food19} alt="" />
                 </div>
               </div>
-              <div className="py-4 flex text-xl font-bold justify-center z-10">Advance Mode</div>
+              <div className="py-4 flex text-xl font-bold justify-center z-10">Sweet Menu</div>
               <div className="flex-1 justify-betweenn px-3">
                 <div className="flex flex-row items-center justify-between gap-2">
                   <div className="flex px-2 py-1 bg-white items-center gap-2 rounded-xl">
@@ -128,8 +132,7 @@ const Special = () => {
                   </div>
                   <div className="">
                     <dir className="flex gap-1">
-                      <BsCart3 className="bg-green-500 h-7 w-7 px-1 py-1 rounded-l-lg" />
-                      <p className="text-sm py-1 px-1 rounded-r-lg bg-green-500">Add to Cart</p>
+                      <p className="text-sm py-1 px-1 rounded-lg bg-green-500">Add to Cart</p>
                     </dir>
                   </div>
                 </div>

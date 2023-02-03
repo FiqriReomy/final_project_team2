@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <>
-      <section className="flex flex-col w-[250px] h-full bg-neutral-900 ">
+      <section className="flex flex-col w-[250px] h-full bg-green-700 pt-28">
         <div className="py-2 px-2">
           <Link className="py-2 px-4 text-white flex gap-2 rounded hover:bg-neutral-700 mb-2" to="/dashboard/pengaturan">
             <IoSettings fontSize={25} />
