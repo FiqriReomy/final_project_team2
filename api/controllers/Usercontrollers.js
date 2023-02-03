@@ -2,6 +2,7 @@ import Users from "../models/UserModels.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+
 dotenv.config();
 export const getUsers = async (req, res) => {
   try {
@@ -41,6 +42,7 @@ export const Register = async (req, res) => {
 
 export const Login = async (req, res) => {
   const { email, password } = req.body;
+
   const user = await Users.findOne({ where: { email: email } });
   // email existance check
   if (!user) return res.status(403).json({ msg: "email doesnt exist" });

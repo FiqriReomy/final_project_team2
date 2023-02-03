@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
 }
@@ -34,5 +37,29 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Animation Frames */
+
+/* dropdown */
+.dropdown {
+  position: absolute;
+  background-color: #61dafb;
+  top: 48px;
+  width: 250px;
+  height: 100px;
+  padding: 5px;
+  animation: dropdown 0.3s ease-in-out;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
