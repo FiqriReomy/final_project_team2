@@ -2,7 +2,7 @@ import React from "react";
 
 const Setting = () => {
   return (
-    <section className="h-full px-5 ">
+    <section className="h-full px-5 pt-28 bg-green-400">
       <div className="profil h-full border px-5">
         <h2 className="py-2 mb-2 font-bold">INFORMASI AKUN</h2>
         <div className="flex justify-between">

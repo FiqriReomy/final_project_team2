@@ -7,8 +7,8 @@ import PopularProducts from "../../components/admin/PopularProducts";
 
 const Dashboard = () => {
   return (
-    <div className="bg-neutral-100 p-4 ">
-      <div className="flex flex-col gap-4">
+    <div className=" bg-neutral-100 p-5 ">
+      <div className=" flex flex-col gap-4">
         <DashboardStatsGrid />
         <div className="flex flex-row gap-4 w-full">
           <TransactionChart />

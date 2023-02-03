@@ -10,7 +10,7 @@ const Home = () => {
           <div className="max-md">
             <h1 className="mb-5 text-7xl font-bold">Brings Taste With Love Into Your Home</h1>
             <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button className="btn btn-primary">Shop Now</button>
+            <button className="btn btn-warning">Order Now</button>
           </div>
         </div>
       </div>
